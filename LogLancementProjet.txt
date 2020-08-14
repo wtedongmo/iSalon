@@ -1,0 +1,533 @@
+Using CATALINA_BASE:   "D:\Programmes\Apache Software Foundation\Tomcat 7.0"
+Using CATALINA_HOME:   "D:\Programmes\Apache Software Foundation\Tomcat 7.0"
+Using CATALINA_TMPDIR: "D:\Programmes\Apache Software Foundation\Tomcat 7.0\temp"
+Using JRE_HOME:        "C:\Program Files\Java\jdk1.7.0_17"
+Using CLASSPATH:       "D:\Programmes\Apache Software Foundation\Tomcat 7.0\bin\bootstrap.jar;D:\Programmes\Apache Software Foundation\Tomcat 7.0\bin\tomcat-juli.jar"
+mai 02, 2015 9:07:10 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.7.0_17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.7.0_17\bin;C:\Program Files\Java\jre7\bin;D:\Programmes\MYSQL\MySQL Server 5.6\bin;C:\Program Files (x86)\Microsoft SQL Server\90\Tools\binn\;C:\Program Files (x86)\Skype\Phone\;.
+mai 02, 2015 9:07:12 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8082"]
+mai 02, 2015 9:07:12 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+mai 02, 2015 9:07:12 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 3071 ms
+mai 02, 2015 9:07:12 PM org.apache.catalina.core.StandardService startInternal
+INFO: Démarrage du service Catalina
+mai 02, 2015 9:07:12 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.41
+mai 02, 2015 9:07:12 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Déploiement du descripteur de configuration D:\Programmes\Apache Software Foundation\Tomcat 7.0\conf\Catalina\localhost\GestComMTN.xml
+mai 02, 2015 9:07:28 PM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/core is already defined
+21:07:29,649  INFO localhost-startStop-1 context.ContextLoader:285 - Root WebApplicationContext: initialization started
+21:07:29,659  INFO localhost-startStop-1 support.AnnotationConfigWebApplicationContext:513 - Refreshing Root WebApplicationContext: startup date [Sat May 02 21:07:29 WAT 2015]; root of context hierarchy
+21:07:29,764  INFO localhost-startStop-1 support.AnnotationConfigWebApplicationContext:208 - Registering annotated classes: [class com.tsoft.config.HibernateConfig,class com.tsoft.config.SecurityConfig,class com.tsoft.config.WebConfig]
+21:07:31,363  INFO localhost-startStop-1 support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'org.springframework.scheduling.annotation.SchedulingConfiguration' of type [class org.springframework.scheduling.annotation.SchedulingConfiguration$$EnhancerByCGLIB$$e8da280d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:07:31,472  INFO localhost-startStop-1 support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'hibernateConfig' of type [class com.tsoft.config.HibernateConfig$$EnhancerByCGLIB$$9e598e5c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:07:31,659  WARN localhost-startStop-1 annotation.AutowiredAnnotationBeanPostProcessor:364 - Autowired annotation should be used on methods with actual parameters: public org.springframework.security.web.authentication.AuthenticationFailureHandler com.tsoft.config.SecurityConfig.authenticationFailureHandler() throws java.lang.Exception
+21:07:31,660  WARN localhost-startStop-1 annotation.AutowiredAnnotationBeanPostProcessor:364 - Autowired annotation should be used on methods with actual parameters: public org.springframework.security.web.authentication.AuthenticationSuccessHandler com.tsoft.config.SecurityConfig.authenticationSuccessHandler() throws java.lang.Exception
+21:07:32,202  INFO localhost-startStop-1 datasource.DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+21:07:32,529  INFO localhost-startStop-1 common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+21:07:32,543  INFO localhost-startStop-1 hibernate.Version:54 - HHH000412: Hibernate Core {4.3.1.Final}
+21:07:32,565  INFO localhost-startStop-1 cfg.Environment:239 - HHH000206: hibernate.properties not found
+21:07:32,569  INFO localhost-startStop-1 cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+21:07:36,525  INFO localhost-startStop-1 dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+21:07:37,193  INFO localhost-startStop-1 internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+21:07:37,213  INFO localhost-startStop-1 ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+21:07:37,429  INFO localhost-startStop-1 search.Version:43 - HSEARCH000034: Hibernate Search 4.5.1.Final
+21:07:38,496  INFO localhost-startStop-1 hbm2ddl.SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+21:07:38,498  INFO localhost-startStop-1 hbm2ddl.SchemaUpdate:193 - HHH000102: Fetching database metadata
+21:07:38,568  INFO localhost-startStop-1 hbm2ddl.SchemaUpdate:205 - HHH000396: Updating schema
+21:07:40,739  INFO localhost-startStop-1 hbm2ddl.TableMetadata:66 - HHH000261: Table found: gestcommtn.comptepersonne
+21:07:40,741  INFO localhost-startStop-1 hbm2ddl.TableMetadata:67 - HHH000037: Columns: [code_personne, libelle, updatedby, state, debit, updateddate, createddate, createdby, code, credit, code_revendeur]
+21:07:40,742  INFO localhost-startStop-1 hbm2ddl.TableMetadata:69 - HHH000108: Foreign keys: [fk_b8hk2ya93dw2esliryu16wrtu, fk_eqwc3up4p29u3hv9hudxl2kjr]
+21:07:40,743  INFO localhost-startStop-1 hbm2ddl.TableMetadata:70 - HHH000126: Indexes: [primary, fk_b8hk2ya93dw2esliryu16wrtu, fk_eqwc3up4p29u3hv9hudxl2kjr]
+21:07:41,143  INFO localhost-startStop-1 hbm2ddl.TableMetadata:66 - HHH000261: Table found: gestcommtn.droit
+21:07:41,145  INFO localhost-startStop-1 hbm2ddl.TableMetadata:67 - HHH000037: Columns: [isenabled, code_rubrique, updatedby, code_profil, state, permission, updateddate, createddate, createdby, code]
+21:07:41,146  INFO localhost-startStop-1 hbm2ddl.TableMetadata:69 - HHH000108: Foreign keys: [fk_n6vtej6pirtyi8mx5dijj2xav, fk_56xhiux27xw2abg9xmujhgpgm]
+21:07:41,148  INFO localhost-startStop-1 hbm2ddl.TableMetadata:70 - HHH000126: Indexes: [primary, fk_n6vtej6pirtyi8mx5dijj2xav, fk_56xhiux27xw2abg9xmujhgpgm]
+21:07:41,291  INFO localhost-startStop-1 hbm2ddl.TableMetadata:66 - HHH000261: Table found: gestcommtn.menu
+21:07:41,293  INFO localhost-startStop-1 hbm2ddl.TableMetadata:67 - HHH000037: Columns: [isenabled, libelle, updatedby, state, updateddate, createddate, createdby, code]
+21:07:41,294  INFO localhost-startStop-1 hbm2ddl.TableMetadata:69 - HHH000108: Foreign keys: []
+21:07:41,295  INFO localhost-startStop-1 hbm2ddl.TableMetadata:70 - HHH000126: Indexes: [uk_oytepumsam0jvxieqkuti3ihu, primary]
+21:07:41,408  INFO localhost-startStop-1 hbm2ddl.TableMetadata:66 - HHH000261: Table found: gestcommtn.mouvementpuce
+21:07:41,410  INFO localhost-startStop-1 hbm2ddl.TableMetadata:67 - HHH000037: Columns: [heure_operation, montant, state, code_puce, code_puce_destination, code, createdby, createddate, updateddate, reference, destination, isenabled, balance, code_puce_source, updatedby, senstransfert, date_operation]
+21:07:41,411  INFO localhost-startStop-1 hbm2ddl.TableMetadata:69 - HHH000108: Foreign keys: [fk_9rfisklyif6akmgpm1w1b4nsw, fk_n7smhivw4pvw5m6jyindn64jq, fk_jle7vkoh4dwloxvv339039du2]
+21:07:41,412  INFO localhost-startStop-1 hbm2ddl.TableMetadata:70 - HHH000126: Indexes: [fk_9rfisklyif6akmgpm1w1b4nsw, primary, fk_n7smhivw4pvw5m6jyindn64jq, fk_jle7vkoh4dwloxvv339039du2]
+21:07:41,506  INFO localhost-startStop-1 hbm2ddl.TableMetadata:66 - HHH000261: Table found: gestcommtn.paiement
+21:07:41,508  INFO localhost-startStop-1 hbm2ddl.TableMetadata:67 - HHH000037: Columns: [montant, compteclient, state, datepaiement, code, createdby, createddate, updateddate, reference, updatedby, comptefournisseur, datemouvement, sens]
+21:07:41,509  INFO localhost-startStop-1 hbm2ddl.TableMetadata:69 - HHH000108: Foreign keys: [fk_87d1j278w62t9x5ckifj8inbv, fk_s8mn64p6nyuurgcr2jeu08wyw]
+21:07:41,510  INFO localhost-startStop-1 hbm2ddl.TableMetadata:70 - HHH000126: Indexes: [fk_87d1j278w62t9x5ckifj8inbv, fk_s8mn64p6nyuurgcr2jeu08wyw, primary]
+21:07:41,652  INFO localhost-startStop-1 hbm2ddl.TableMetadata:66 - HHH000261: Table found: gestcommtn.personne
+21:07:41,654  INFO localhost-startStop-1 hbm2ddl.TableMetadata:67 - HHH000037: Columns: [state, code, createdby, createddate, updateddate, numerocni, categorie, updatedby, email_adresse, date_naissance, nom_prenom, lieu_naissance, telephone_mobile]
+21:07:41,655  INFO localhost-startStop-1 hbm2ddl.TableMetadata:69 - HHH000108: Foreign keys: []
+21:07:41,656  INFO localhost-startStop-1 hbm2ddl.TableMetadata:70 - HHH000126: Indexes: [primary]
+21:07:41,731  INFO localhost-startStop-1 hbm2ddl.TableMetadata:66 - HHH000261: Table found: gestcommtn.profil
+21:07:41,732  INFO localhost-startStop-1 hbm2ddl.TableMetadata:67 - HHH000037: Columns: [isenabled, libelle, updatedby, state, updateddate, createddate, createdby, code]
+21:07:41,733  INFO localhost-startStop-1 hbm2ddl.TableMetadata:69 - HHH000108: Foreign keys: []
+21:07:41,738  INFO localhost-startStop-1 hbm2ddl.TableMetadata:70 - HHH000126: Indexes: [primary]
+21:07:41,836  INFO localhost-startStop-1 hbm2ddl.TableMetadata:66 - HHH000261: Table found: gestcommtn.puce
+21:07:41,837  INFO localhost-startStop-1 hbm2ddl.TableMetadata:67 - HHH000037: Columns: [isenabled, balance, updatedby, msisdn, state, updateddate, createddate, createdby, code, code_revendeur]
+21:07:41,838  INFO localhost-startStop-1 hbm2ddl.TableMetadata:69 - HHH000108: Foreign keys: [fk_g2xst7rbkyj23gnn10uw3c9bl]
+21:07:41,839  INFO localhost-startStop-1 hbm2ddl.TableMetadata:70 - HHH000126: Indexes: [fk_g2xst7rbkyj23gnn10uw3c9bl, primary]
+21:07:41,911  INFO localhost-startStop-1 hbm2ddl.TableMetadata:66 - HHH000261: Table found: gestcommtn.rubrique
+21:07:41,912  INFO localhost-startStop-1 hbm2ddl.TableMetadata:67 - HHH000037: Columns: [isenabled, code_menu, libelle, updatedby, state, entite, updateddate, createddate, createdby, code, reference]
+21:07:41,913  INFO localhost-startStop-1 hbm2ddl.TableMetadata:69 - HHH000108: Foreign keys: [fk_f4dxpxlidlvajy7gy6ylh6qgu]
+21:07:41,914  INFO localhost-startStop-1 hbm2ddl.TableMetadata:70 - HHH000126: Indexes: [fk_f4dxpxlidlvajy7gy6ylh6qgu, primary, uk_iq9gkoroq3dd39wu3etcwyteu]
+21:07:42,014  INFO localhost-startStop-1 hbm2ddl.TableMetadata:66 - HHH000261: Table found: gestcommtn.user
+21:07:42,015  INFO localhost-startStop-1 hbm2ddl.TableMetadata:67 - HHH000037: Columns: [lastaccessdate, state, code, createdby, createddate, updateddate, password, nom, prenom, isenabled, username, numerocni, updatedby, email_adresse, iscredentialsnonexpired, isaccountnonexpired, date_naissance, nom_prenom, lieu_naissance, telephone_mobile, isaccountnonlocked]
+21:07:42,016  INFO localhost-startStop-1 hbm2ddl.TableMetadata:69 - HHH000108: Foreign keys: []
+21:07:42,017  INFO localhost-startStop-1 hbm2ddl.TableMetadata:70 - HHH000126: Indexes: [uk_jreodf78a7pl5qidfh43axdfb, primary]
+21:07:42,064  INFO localhost-startStop-1 hbm2ddl.TableMetadata:66 - HHH000261: Table found: gestcommtn.userprofil
+21:07:42,065  INFO localhost-startStop-1 hbm2ddl.TableMetadata:67 - HHH000037: Columns: [isenabled, code_user, updatedby, code_profil, state, updateddate, createddate, createdby, code]
+21:07:42,066  INFO localhost-startStop-1 hbm2ddl.TableMetadata:69 - HHH000108: Foreign keys: [fk_7s4y9nsrgxjwt51o619g9q2mj, fk_kkwcka6bp0vf55luat6udthde]
+21:07:42,067  INFO localhost-startStop-1 hbm2ddl.TableMetadata:70 - HHH000126: Indexes: [fk_7s4y9nsrgxjwt51o619g9q2mj, primary, fk_kkwcka6bp0vf55luat6udthde]
+21:07:42,071  INFO localhost-startStop-1 hbm2ddl.SchemaUpdate:242 - HHH000232: Schema update complete
+21:07:42,444  WARN localhost-startStop-1 impl.ConfigContext:257 - HSEARCH000075: Configuration setting hibernate.search.lucene_version was not specified, using LUCENE_CURRENT.
+21:07:44,040  INFO localhost-startStop-1 hibernate4.HibernateTransactionManager:341 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@359c8070] of Hibernate SessionFactory for HibernateTransactionManager
+21:07:44,257  INFO localhost-startStop-1 web.DefaultSecurityFilterChain:28 - Creating filter chain: Ant [pattern='/resources/**'], []
+21:07:44,258  INFO localhost-startStop-1 web.DefaultSecurityFilterChain:28 - Creating filter chain: Ant [pattern='/resources'], []
+21:07:44,386  INFO localhost-startStop-1 channel.ChannelProcessingFilter:117 - Validated configuration attributes
+21:07:44,390  INFO localhost-startStop-1 web.DefaultSecurityFilterChain:28 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.access.channel.ChannelProcessingFilter@7f830ceb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f1a1a70, org.springframework.security.web.context.SecurityContextPersistenceFilter@58cac4d, org.springframework.security.web.header.HeaderWriterFilter@a6c786e, org.springframework.security.web.authentication.logout.LogoutFilter@1b62781b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@47723faa, org.springframework.security.web.session.ConcurrentSessionFilter@1fc7764e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@719085c4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@48247827, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2abddfd7, org.springframework.security.web.session.SessionManagementFilter@155e4cb8, org.springframework.security.web.access.ExceptionTranslationFilter@379217ae, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1e08e356]
+21:07:44,552  INFO localhost-startStop-1 handler.SimpleUrlHandlerMapping:315 - Mapped URL path [/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+21:07:44,635  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/datatables/ajaxsource/{categorie}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json || */*],custom=[]}" onto public java.lang.String com.tsoft.web.controller.DatatablesController.processajaxsource(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession) throws com.tsoft.web.controller.exception.NoSuchCategorieException
+21:07:44,636  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/{categorie}/print/html],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.DownloadController.print(java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes) throws com.tsoft.web.controller.exception.NoSuchCategorieException,java.io.IOException
+21:07:44,637  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/download],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto protected void com.tsoft.web.controller.DownloadController.processRequest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+21:07:44,638  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/{categorie}/form],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.FormController.showform(org.springframework.ui.Model,java.lang.String,javax.servlet.http.HttpServletRequest,boolean,java.lang.String,java.lang.Integer) throws java.lang.Exception
+21:07:44,639  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/{categorie}/edit/{row}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.FormController.showform1(java.lang.String,javax.servlet.http.HttpSession,org.springframework.ui.Model,java.lang.Integer,javax.servlet.http.HttpServletRequest,org.springframework.web.servlet.mvc.support.RedirectAttributes) throws java.lang.Exception
+21:07:44,640  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/{categorie}/del/{code}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.ListController.del(int,java.lang.String,java.lang.Integer,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+21:07:44,641  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/{categorie}/autocomplete],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json || */*],custom=[]}" onto public java.lang.String com.tsoft.web.controller.ListController.autocomplete(java.lang.String,java.lang.String) throws java.lang.Exception
+21:07:44,642  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/{categorie}/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.ListController.listecategorie(java.lang.String,javax.servlet.http.HttpSession,org.springframework.ui.Model)
+21:07:44,643  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/login || /],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.LoginLogoutController.login(java.lang.String,org.springframework.ui.Model)
+21:07:44,643  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/authenticationSuccess],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.LoginLogoutController.authenticationSuccess(javax.servlet.http.HttpSession)
+21:07:44,644  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/home],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.LoginLogoutController.homepage(org.springframework.ui.Model)
+21:07:44,650  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/changepassword],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.ProcessController.showchangepasswordform()
+21:07:44,651  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/changepassword],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.ProcessController.changepasswordform(org.springframework.ui.Model,java.lang.String,java.lang.String)
+21:07:44,652  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/processdata/{servicename}],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.ProcessController.submitprocessformdata(java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.multipart.MultipartHttpServletRequest)
+21:07:44,653  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/process/{servicename}],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.ProcessController.submitprocessform(java.lang.String,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletRequest)
+21:07:44,654  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/contact],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.ProcessController.showcontact()
+21:07:44,655  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/contact],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.ProcessController.sendcontact()
+21:07:44,655  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/showview/{viewname}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.ProcessController.showview(java.lang.String)
+21:07:44,656  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/{categorie}/{row}/relations/{sfield}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.RelationController.relationlist(java.lang.String,java.lang.String,int,javax.servlet.http.HttpSession,org.springframework.ui.Model) throws java.lang.Exception
+21:07:44,659  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/{categorie}/save],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.RestCRUDController.save(javax.servlet.http.HttpSession,java.lang.String,javax.servlet.http.HttpServletRequest)
+21:07:44,661  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/{categorie}/del/{code}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.RestCRUDController.del(int,java.lang.String,javax.servlet.http.HttpSession,java.lang.Integer,javax.servlet.http.HttpServletRequest)
+21:07:44,662  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/{categorie}/getElementAtrow1],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.rest.RestCRUDController.getElementmodal(javax.servlet.http.HttpSession,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+21:07:44,663  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/{categorie}/getElementAtrow],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.rest.RestCRUDController.getElement(javax.servlet.http.HttpSession,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,boolean) throws java.lang.Exception
+21:07:44,701  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/{categorie}/formmodel1],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.RestFormController.getformmodel1(javax.servlet.http.HttpSession,java.lang.String)
+21:07:44,702  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/{process}/formprocess],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.RestFormController.getformprocess(javax.servlet.http.HttpSession,java.lang.String,boolean,javax.servlet.http.HttpServletRequest)
+21:07:44,703  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/{categorie}/formmodel],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.RestFormController.getformmodel(javax.servlet.http.HttpSession,java.lang.String,boolean)
+21:07:44,704  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/{categorie}/listmodel],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.RestFormController.getlistmodel(javax.servlet.http.HttpSession,java.lang.String)
+21:07:44,706  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/{categorie}/search1],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.SearchController.simplesearch(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes) throws java.lang.Exception
+21:07:44,707  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/{categorie}/search],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.SearchController.recherche(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes) throws java.lang.Exception
+21:07:44,708  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/{categorie}/searchfull],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.SearchController.fullsearch(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes) throws java.lang.Exception
+21:07:45,499  INFO localhost-startStop-1 context.ContextLoader:325 - Root WebApplicationContext: initialization completed in 15848 ms
+21:07:45,524  INFO localhost-startStop-1 init.CustomDispatcherServlet:479 - FrameworkServlet 'dispatcher': initialization started
+21:07:45,529  INFO localhost-startStop-1 support.AnnotationConfigWebApplicationContext:513 - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sat May 02 21:07:45 WAT 2015]; parent: Root WebApplicationContext
+21:07:45,535  INFO localhost-startStop-1 support.AnnotationConfigWebApplicationContext:208 - Registering annotated classes: [class com.tsoft.config.WebConfig]
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+21:07:45,734  INFO localhost-startStop-1 handler.SimpleUrlHandlerMapping:315 - Mapped URL path [/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+21:07:45,751  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/datatables/ajaxsource/{categorie}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json || */*],custom=[]}" onto public java.lang.String com.tsoft.web.controller.DatatablesController.processajaxsource(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession) throws com.tsoft.web.controller.exception.NoSuchCategorieException
+21:07:45,752  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/{categorie}/print/html],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.DownloadController.print(java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes) throws com.tsoft.web.controller.exception.NoSuchCategorieException,java.io.IOException
+21:07:45,753  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/download],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto protected void com.tsoft.web.controller.DownloadController.processRequest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+21:07:45,755  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/{categorie}/form],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.FormController.showform(org.springframework.ui.Model,java.lang.String,javax.servlet.http.HttpServletRequest,boolean,java.lang.String,java.lang.Integer) throws java.lang.Exception
+21:07:45,756  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/{categorie}/edit/{row}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.FormController.showform1(java.lang.String,javax.servlet.http.HttpSession,org.springframework.ui.Model,java.lang.Integer,javax.servlet.http.HttpServletRequest,org.springframework.web.servlet.mvc.support.RedirectAttributes) throws java.lang.Exception
+21:07:45,758  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/{categorie}/del/{code}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.ListController.del(int,java.lang.String,java.lang.Integer,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+21:07:45,759  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/{categorie}/autocomplete],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json || */*],custom=[]}" onto public java.lang.String com.tsoft.web.controller.ListController.autocomplete(java.lang.String,java.lang.String) throws java.lang.Exception
+21:07:45,760  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/{categorie}/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.ListController.listecategorie(java.lang.String,javax.servlet.http.HttpSession,org.springframework.ui.Model)
+21:07:45,762  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/login || /],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.LoginLogoutController.login(java.lang.String,org.springframework.ui.Model)
+21:07:45,763  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/authenticationSuccess],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.LoginLogoutController.authenticationSuccess(javax.servlet.http.HttpSession)
+21:07:45,784  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/home],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.LoginLogoutController.homepage(org.springframework.ui.Model)
+21:07:45,787  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/changepassword],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.ProcessController.showchangepasswordform()
+21:07:45,789  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/changepassword],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.ProcessController.changepasswordform(org.springframework.ui.Model,java.lang.String,java.lang.String)
+21:07:45,790  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/processdata/{servicename}],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.ProcessController.submitprocessformdata(java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.multipart.MultipartHttpServletRequest)
+21:07:45,791  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/process/{servicename}],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.ProcessController.submitprocessform(java.lang.String,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletRequest)
+21:07:45,792  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/contact],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.ProcessController.showcontact()
+21:07:45,793  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/contact],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.ProcessController.sendcontact()
+21:07:45,794  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/showview/{viewname}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.ProcessController.showview(java.lang.String)
+21:07:45,795  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/{categorie}/{row}/relations/{sfield}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.RelationController.relationlist(java.lang.String,java.lang.String,int,javax.servlet.http.HttpSession,org.springframework.ui.Model) throws java.lang.Exception
+21:07:45,798  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/{categorie}/save],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.RestCRUDController.save(javax.servlet.http.HttpSession,java.lang.String,javax.servlet.http.HttpServletRequest)
+21:07:45,800  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/{categorie}/del/{code}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.RestCRUDController.del(int,java.lang.String,javax.servlet.http.HttpSession,java.lang.Integer,javax.servlet.http.HttpServletRequest)
+21:07:45,801  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/{categorie}/getElementAtrow1],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.rest.RestCRUDController.getElementmodal(javax.servlet.http.HttpSession,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+21:07:45,885  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/{categorie}/getElementAtrow],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.rest.RestCRUDController.getElement(javax.servlet.http.HttpSession,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,boolean) throws java.lang.Exception
+21:07:45,888  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/{categorie}/formmodel1],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.RestFormController.getformmodel1(javax.servlet.http.HttpSession,java.lang.String)
+21:07:45,892  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/{process}/formprocess],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.RestFormController.getformprocess(javax.servlet.http.HttpSession,java.lang.String,boolean,javax.servlet.http.HttpServletRequest)
+21:07:45,893  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/{categorie}/formmodel],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.RestFormController.getformmodel(javax.servlet.http.HttpSession,java.lang.String,boolean)
+21:07:45,894  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/{categorie}/listmodel],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.RestFormController.getlistmodel(javax.servlet.http.HttpSession,java.lang.String)
+21:07:45,896  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/{categorie}/search1],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.SearchController.simplesearch(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes) throws java.lang.Exception
+21:07:45,898  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/{categorie}/search],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.SearchController.recherche(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes) throws java.lang.Exception
+21:07:45,899  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/{categorie}/searchfull],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.SearchController.fullsearch(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes) throws java.lang.Exception
+21:07:45,988  INFO localhost-startStop-1 init.CustomDispatcherServlet:498 - FrameworkServlet 'dispatcher': initialization completed in 464 ms
+mai 02, 2015 9:07:46 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Déploiement de l'archive D:\Programmes\Apache Software Foundation\Tomcat 7.0\webapps\WebSchool.war de l'application web
+mai 02, 2015 9:07:55 PM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/core is already defined
+21:07:55,879  INFO localhost-startStop-1 context.ContextLoader:285 - Root WebApplicationContext: initialization started
+21:07:55,886  INFO localhost-startStop-1 support.AnnotationConfigWebApplicationContext:513 - Refreshing Root WebApplicationContext: startup date [Sat May 02 21:07:55 WAT 2015]; root of context hierarchy
+21:07:55,960  INFO localhost-startStop-1 support.AnnotationConfigWebApplicationContext:208 - Registering annotated classes: [class com.tsoft.config.HibernateConfig,class com.tsoft.config.SecurityConfig]
+21:07:56,642  INFO localhost-startStop-1 support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'org.springframework.scheduling.annotation.SchedulingConfiguration' of type [class org.springframework.scheduling.annotation.SchedulingConfiguration$$EnhancerByCGLIB$$73a40125] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:07:56,689  INFO localhost-startStop-1 support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'hibernateConfig' of type [class com.tsoft.config.HibernateConfig$$EnhancerByCGLIB$$29236774] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:07:56,785  WARN localhost-startStop-1 annotation.AutowiredAnnotationBeanPostProcessor:364 - Autowired annotation should be used on methods with actual parameters: public org.springframework.security.web.authentication.AuthenticationFailureHandler com.tsoft.config.SecurityConfig.authenticationFailureHandler() throws java.lang.Exception
+21:07:56,786  WARN localhost-startStop-1 annotation.AutowiredAnnotationBeanPostProcessor:364 - Autowired annotation should be used on methods with actual parameters: public org.springframework.security.web.authentication.AuthenticationSuccessHandler com.tsoft.config.SecurityConfig.authenticationSuccessHandler() throws java.lang.Exception
+21:07:57,081  INFO localhost-startStop-1 datasource.DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+21:07:57,385  INFO localhost-startStop-1 common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+21:07:57,408  INFO localhost-startStop-1 hibernate.Version:54 - HHH000412: Hibernate Core {4.3.1.Final}
+21:07:57,412  INFO localhost-startStop-1 cfg.Environment:239 - HHH000206: hibernate.properties not found
+21:07:57,421  INFO localhost-startStop-1 cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+21:08:00,051  WARN localhost-startStop-1 internal.JdbcServicesImpl:204 - HHH000342: Could not obtain connection to query metadata : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+21:08:00,118  INFO localhost-startStop-1 dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+21:08:00,155  INFO localhost-startStop-1 internal.LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+21:08:00,749  INFO localhost-startStop-1 internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+21:08:00,769  INFO localhost-startStop-1 ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+21:08:00,986  INFO localhost-startStop-1 search.Version:43 - HSEARCH000034: Hibernate Search 4.5.1.Final
+21:08:01,693  INFO localhost-startStop-1 hbm2ddl.SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+21:08:01,693  INFO localhost-startStop-1 hbm2ddl.SchemaUpdate:193 - HHH000102: Fetching database metadata
+21:08:03,745 ERROR localhost-startStop-1 hbm2ddl.SchemaUpdate:201 - HHH000319: Could not get database metadata
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1117)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:355)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2461)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2498)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2283)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:822)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:404)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:317)
+	at java.sql.DriverManager.getConnection(DriverManager.java:579)
+	at java.sql.DriverManager.getConnection(DriverManager.java:190)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:153)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:144)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:155)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:120)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:194)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:178)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:521)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1857)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1928)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:343)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:431)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:957)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:480)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:957)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:480)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:957)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:480)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:700)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4887)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5381)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:976)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1653)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:69)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at java.net.Socket.<init>(Socket.java:425)
+	at java.net.Socket.<init>(Socket.java:241)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:259)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:305)
+	... 95 more
+21:08:03,810 ERROR localhost-startStop-1 hbm2ddl.SchemaUpdate:247 - HHH000299: Could not complete schema update
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1117)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:355)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2461)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2498)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2283)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:822)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:404)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:317)
+	at java.sql.DriverManager.getConnection(DriverManager.java:579)
+	at java.sql.DriverManager.getConnection(DriverManager.java:190)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:153)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:144)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:155)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:120)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:194)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:178)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:521)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1857)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1928)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:343)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:431)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:957)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:480)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:957)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:480)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:957)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:480)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:700)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4887)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5381)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:976)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1653)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:69)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at java.net.Socket.<init>(Socket.java:425)
+	at java.net.Socket.<init>(Socket.java:241)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:259)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:305)
+	... 95 more
+21:08:05,504  WARN localhost-startStop-1 impl.ConfigContext:257 - HSEARCH000075: Configuration setting hibernate.search.lucene_version was not specified, using LUCENE_CURRENT.
+21:08:06,555  INFO localhost-startStop-1 hibernate4.HibernateTransactionManager:341 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@39084374] of Hibernate SessionFactory for HibernateTransactionManager
+21:08:06,734  INFO localhost-startStop-1 web.DefaultSecurityFilterChain:28 - Creating filter chain: Ant [pattern='/resources/**'], []
+21:08:06,735  INFO localhost-startStop-1 web.DefaultSecurityFilterChain:28 - Creating filter chain: Ant [pattern='/resources'], []
+21:08:06,864  INFO localhost-startStop-1 channel.ChannelProcessingFilter:117 - Validated configuration attributes
+21:08:06,867  INFO localhost-startStop-1 web.DefaultSecurityFilterChain:28 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.access.channel.ChannelProcessingFilter@48781daa, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d0770f0, org.springframework.security.web.context.SecurityContextPersistenceFilter@7e180e4c, org.springframework.security.web.header.HeaderWriterFilter@42746884, org.springframework.security.web.authentication.logout.LogoutFilter@47a55958, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@79a4e4c3, org.springframework.security.web.session.ConcurrentSessionFilter@2a7f1664, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c00b99d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5e2f28f2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2387c412, org.springframework.security.web.session.SessionManagementFilter@7377f271, org.springframework.security.web.access.ExceptionTranslationFilter@24fba112, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7c5562ef]
+21:08:06,939  INFO localhost-startStop-1 context.ContextLoader:325 - Root WebApplicationContext: initialization completed in 11058 ms
+21:08:07,172  INFO localhost-startStop-1 init.CustomDispatcherServlet:479 - FrameworkServlet 'dispatcher': initialization started
+21:08:07,180  INFO localhost-startStop-1 support.AnnotationConfigWebApplicationContext:513 - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sat May 02 21:08:07 WAT 2015]; parent: Root WebApplicationContext
+21:08:07,185  INFO localhost-startStop-1 support.AnnotationConfigWebApplicationContext:208 - Registering annotated classes: [class com.tsoft.config.WebConfig]
+21:08:07,625  INFO localhost-startStop-1 handler.SimpleUrlHandlerMapping:315 - Mapped URL path [/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+21:08:07,692  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/datatables/ajaxsource/{categorie}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json || */*],custom=[]}" onto public java.lang.String com.tsoft.web.controller.DatatablesController.processajaxsource(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession) throws com.tsoft.web.controller.exception.NoSuchCategorieException
+21:08:07,694  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/{categorie}/print/html],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.DownloadController.print(java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes) throws com.tsoft.web.controller.exception.NoSuchCategorieException,java.io.IOException
+21:08:07,694  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/download],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto protected void com.tsoft.web.controller.DownloadController.processRequest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+21:08:07,695  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/gestevent],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.tsoft.web.controller.EventController.scheduler_02(javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+21:08:07,696  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/gestevent_load],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.EventController.events_02(javax.servlet.http.HttpServletRequest)
+21:08:07,697  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/{categorie}/form],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.FormController.showform(org.springframework.ui.Model,java.lang.String,javax.servlet.http.HttpServletRequest,boolean,java.lang.String,java.lang.Integer) throws java.lang.Exception
+21:08:07,697  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/{categorie}/edit/{row}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.FormController.showform1(java.lang.String,javax.servlet.http.HttpSession,org.springframework.ui.Model,java.lang.Integer,javax.servlet.http.HttpServletRequest,org.springframework.web.servlet.mvc.support.RedirectAttributes) throws java.lang.Exception
+21:08:07,699  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/{categorie}/del/{code}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.ListController.del(int,java.lang.String,java.lang.Integer,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+21:08:07,700  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/{categorie}/autocomplete],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json || */*],custom=[]}" onto public java.lang.String com.tsoft.web.controller.ListController.autocomplete(java.lang.String,java.lang.String) throws java.lang.Exception
+21:08:07,700  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/{categorie}/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.ListController.listecategorie(java.lang.String,javax.servlet.http.HttpSession,org.springframework.ui.Model)
+21:08:07,708  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/login || /],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.LoginLogoutController.login(java.lang.String,org.springframework.ui.Model)
+21:08:07,709  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/authenticationSuccess],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.LoginLogoutController.authenticationSuccess(javax.servlet.http.HttpSession)
+21:08:07,710  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/home],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.LoginLogoutController.homepage(org.springframework.ui.Model)
+21:08:07,712  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/changepassword],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.ProcessController.showchangepasswordform()
+21:08:07,713  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/changepassword],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.ProcessController.changepasswordform(org.springframework.ui.Model,java.lang.String,java.lang.String)
+21:08:07,714  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/contact],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.ProcessController.showcontact()
+21:08:07,715  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/contact],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.ProcessController.sendcontact()
+21:08:07,716  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/showview/{viewname}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.ProcessController.showview(java.lang.String)
+21:08:07,717  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/{categorie}/{row}/relations/{sfield}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.RelationController.relationlist(java.lang.String,java.lang.String,int,javax.servlet.http.HttpSession,org.springframework.ui.Model) throws java.lang.Exception
+21:08:07,720  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/bulletin/{classe}/{type}/{numtype}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.highschool.BulletinController.print(int,java.lang.String,int)
+21:08:07,721  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/classe/retrieve],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.highschool.BulletinController.retrieveclasses()
+21:08:07,725  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/matiere/retrieve],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json || */*],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.highschool.CoefficientController.retrieveMatiere()
+21:08:07,725  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/coefs/{codematiere}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.highschool.CoefficientController.retrieveCoefsMatiere(int)
+21:08:07,758  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/coefs/{codematiere}],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.highschool.CoefficientController.postCoefsMatiere(int,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+21:08:07,762  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/notes/data/{classe}/{matiere}/{seq}],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.highschool.NotesController.runreport(int,int,java.lang.String,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+21:08:07,763  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/notes/data/{classe}/{matiere}/{seq}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.highschool.NotesController.getdata(int,int,int)
+21:08:07,764  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/matiereclasse/{classe}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.highschool.NotesController.retrieveclasses(int)
+21:08:07,765  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/reportexam/data/{type}/{numtype}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.highschool.ReportExamController.retrievedata(java.lang.String,int)
+21:08:07,766  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/reportexam/attributs],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.highschool.ReportExamController.retrieveattributs() throws java.lang.Exception
+21:08:07,768  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/payment/data/{classe}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.highschool.ReportPaymentController.retrievedata(int)
+21:08:07,769  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/payment/classe],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.highschool.ReportPaymentController.retrieveclasse()
+21:08:07,771  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/morris/statsEleves],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.highschool.ReportStatsController.getstatsEleves() throws java.lang.Exception
+21:08:07,772  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/morris/statsProfs],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.highschool.ReportStatsController.getstatsProfs() throws java.lang.Exception
+21:08:07,775  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/{categorie}/save],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.RestCRUDController.save(javax.servlet.http.HttpSession,java.lang.String,javax.servlet.http.HttpServletRequest)
+21:08:07,825  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/{categorie}/del/{code}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.RestCRUDController.del(int,java.lang.String,javax.servlet.http.HttpSession,java.lang.Integer,javax.servlet.http.HttpServletRequest)
+21:08:07,907  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/{categorie}/getElementAtrow1],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.rest.RestCRUDController.getElementmodal(javax.servlet.http.HttpSession,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+21:08:07,908  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/{categorie}/getElementAtrow],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.rest.RestCRUDController.getElement(javax.servlet.http.HttpSession,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,boolean) throws java.lang.Exception
+21:08:07,910  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/{categorie}/formmodel1],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.RestFormController.getformmodel1(javax.servlet.http.HttpSession,java.lang.String)
+21:08:07,911  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/{categorie}/formmodel],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.RestFormController.getformmodel(javax.servlet.http.HttpSession,java.lang.String,boolean)
+21:08:07,915  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/{categorie}/listmodel],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.RestFormController.getlistmodel(javax.servlet.http.HttpSession,java.lang.String)
+21:08:07,923  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/profil/retrieve],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json || */*],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.security.DroitController.retrieveMatiere()
+21:08:07,925  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/droits/{codeprofil}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.security.DroitController.retrieveCoefsMatiere(int)
+21:08:07,926  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/rest/droits/{codeprofil}],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.security.DroitController.retrieveCoefsMatiere1(int,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+21:08:07,927  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/api/login],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json || */*],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.rest.security.LoginController.login(javax.servlet.http.HttpServletRequest)
+21:08:07,929  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/{categorie}/search1],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.SearchController.simplesearch(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes) throws java.lang.Exception
+21:08:07,930  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/{categorie}/search],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.SearchController.recherche(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes) throws java.lang.Exception
+21:08:07,930  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/{categorie}/searchfull],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tsoft.web.controller.SearchController.fullsearch(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes) throws java.lang.Exception
+21:08:07,932  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/timetable],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.tsoft.web.controller.TimetableController.scheduler_02(javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+21:08:07,960  INFO localhost-startStop-1 annotation.RequestMappingHandlerMapping:181 - Mapped "{[/timetable_load],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tsoft.web.controller.TimetableController.events_02(javax.servlet.http.HttpServletRequest)
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+21:08:08,443  INFO localhost-startStop-1 init.CustomDispatcherServlet:498 - FrameworkServlet 'dispatcher': initialization completed in 1270 ms
+mai 02, 2015 9:08:08 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Déploiement du répertoire D:\Programmes\Apache Software Foundation\Tomcat 7.0\webapps\docs de l'application web
+mai 02, 2015 9:08:08 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Déploiement du répertoire D:\Programmes\Apache Software Foundation\Tomcat 7.0\webapps\manager de l'application web
+mai 02, 2015 9:08:08 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Déploiement du répertoire D:\Programmes\Apache Software Foundation\Tomcat 7.0\webapps\ROOT de l'application web
+mai 02, 2015 9:08:08 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8082"]
+mai 02, 2015 9:08:08 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+mai 02, 2015 9:08:08 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 56231 ms
+mai 02, 2015 9:08:12 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/WebSchool] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+mai 02, 2015 9:08:12 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/WebSchool] created a ThreadLocal with key of type [org.apache.log4j.helpers.ThreadLocalMap] (value [org.apache.log4j.helpers.ThreadLocalMap@358f12e4]) and a value of type [java.util.Hashtable] (value [{}]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+21:08:11,877  INFO http-bio-8082-exec-9 support.AnnotationConfigWebApplicationContext:873 - Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sat May 02 21:08:07 WAT 2015]; parent: Root WebApplicationContext
+21:08:11,989  INFO http-bio-8082-exec-9 support.AnnotationConfigWebApplicationContext:873 - Closing Root WebApplicationContext: startup date [Sat May 02 21:07:55 WAT 2015]; root of context hierarchy
+mai 02, 2015 9:08:19 PM org.apache.catalina.startup.HostConfig deleteRedeployResources
+INFO: Repli (undeploy) de l'application web ayant pour chemin de contexte /WebSchool
+mai 02, 2015 9:15:03 PM com.tsoft.web.controller.DatatablesController processajaxsource
+INFO: entree dans la methode ajax datatable
+mai 02, 2015 9:15:03 PM com.tsoft.web.controller.DatatablesController processajaxsource
+INFO: resultat de la requete ajax datatables {"draw":"1","recordsFiltered":0,"data":[],"recordsTotal":0}
+mai 02, 2015 9:15:05 PM com.tsoft.web.controller.SearchController simplesearch
+INFO: requete  simple recherche SELECT c FROM  MouvementPuce  c  
+mai 02, 2015 9:15:05 PM com.tsoft.web.controller.DatatablesController processajaxsource
+INFO: entree dans la methode ajax datatable
+mai 02, 2015 9:15:05 PM com.tsoft.web.controller.DatatablesController processajaxsource
+INFO: resultat de la requete ajax datatables {"draw":"2","recordsFiltered":0,"data":[],"recordsTotal":0}
+mai 02, 2015 9:15:18 PM com.tsoft.web.controller.DatatablesController processajaxsource
+INFO: entree dans la methode ajax datatable
+mai 02, 2015 9:15:18 PM com.tsoft.web.controller.DatatablesController processajaxsource
+INFO: resultat de la requete ajax datatables {"draw":"1","recordsFiltered":0,"data":[],"recordsTotal":0}
+mai 02, 2015 9:15:20 PM com.tsoft.web.controller.SearchController simplesearch
+INFO: requete  simple recherche SELECT c FROM  Puce  c  
+mai 02, 2015 9:15:20 PM com.tsoft.web.controller.DatatablesController processajaxsource
+INFO: entree dans la methode ajax datatable
+mai 02, 2015 9:15:20 PM com.tsoft.web.controller.DatatablesController processajaxsource
+INFO: resultat de la requete ajax datatables {"draw":"2","recordsFiltered":8,"data":[[0,"8",null,"237674635496",null,null,null,null,"14/03/2015 16:52:34","Cotton"],[1,"7",null,"237674631065",null,null,null,null,"14/03/2015 16:52:33","Cotton"],[2,"6",null,"237674633755",null,null,null,null,"14/03/2015 16:52:33","Cotton"],[3,"5",null,"237674635230",null,null,null,null,"14/03/2015 16:52:32","Cotton"],[4,"4","Tedongmo Wilfried","237674635218","50000.0","ACTIF","","","14/03/2015 15:44:55","Cotton"],[5,"3","Arthur tchipnang","237698658989","20000.0","DRAFT","01/03/2015 11:08:53","Cotton","01/03/2015 10:33:10","Cotton"],[6,"2","Arthur tchipnang","237679994949",null,"ACTIF","","","01/03/2015 09:02:50","Cotton"],[7,"1","Fournisseur","237698912884",null,null,"","","01/03/2015 09:01:52","Cotton"]],"recordsTotal":8}
